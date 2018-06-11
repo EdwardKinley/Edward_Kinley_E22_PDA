@@ -1,9 +1,7 @@
 
-numbers_array = [1, 2, 3, 4, 5, 6]
+pets_hash = {"axolotl" => "Aristotl", "budgie" => "Bernadette", "cat" => "Cyril", "dog" => "Dougie"}
 
-numbers_squared = numbers_array.each{ |number| p number**2 }
-
-
+pets_names = pets_hash.each{ |animal, name| puts "The #{animal} is named #{name}." }
 
 
 
