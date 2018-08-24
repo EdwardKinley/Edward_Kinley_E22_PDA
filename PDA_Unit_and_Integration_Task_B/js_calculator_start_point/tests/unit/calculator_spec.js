@@ -29,4 +29,13 @@ describe('calculator', function () {
     assert.equal(result, 3);
   });
 
+  it('should be able to multiply 3 by 5 and get 15', function () {
+    calculator.numberClick(3);
+    calculator.operatorClick('*');
+    calculator.numberClick(5);
+    calculator.operatorClick('=');
+    const result = calculator.previousTotal;
+    assert.equal(result, 15);
+  });
+
 });
