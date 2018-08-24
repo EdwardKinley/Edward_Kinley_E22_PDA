@@ -36,9 +36,19 @@ describe('calculator', function () {
   });
 
   it('can concatenate multiple number button clicks', function () {
-    calculator.numberClick(21);
+    calculator.numberClick(2);
+    calculator.numberClick(1);
     assert.equal(calculator.runningTotal, 21);
   });
 
+  it('can chain multiple operations together', function () {
+    calculator.numberClick(2);
+    calculator.operatorClick('*');
+    calculator.numberClick(3);
+    calculator.operatorClick('+');
+    calculator.numberClick(4);
+    calculator.operatorClick('=');
+    assert.equal(calculator.previousTotal, 10);
+  });
 
 });
