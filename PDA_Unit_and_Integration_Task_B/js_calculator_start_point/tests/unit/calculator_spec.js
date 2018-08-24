@@ -20,4 +20,13 @@ describe('calculator', function () {
     assert.equal(result, 5);
   });
 
+  it('should be able to subtract 4 from 7 and get 3', function () {
+    calculator.numberClick(7);
+    calculator.operatorClick('-');
+    calculator.numberClick(4);
+    calculator.operatorClick('=');
+    const result = calculator.previousTotal;
+    assert.equal(result, 3);
+  });
+
 });
