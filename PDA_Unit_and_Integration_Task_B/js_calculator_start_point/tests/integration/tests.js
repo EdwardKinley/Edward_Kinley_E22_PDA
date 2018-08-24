@@ -38,4 +38,29 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('7');
   });
 
+  it('should have expected output for a range of numbers', function () {
+    running_total = element(by.css('#running_total'));
+    element(by.css('#number3')).click();
+    element(by.css('#operator_multiply')).click();
+    element(by.css('#number5')).click();
+    element(by.css('#operator_subtract')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('15');
+    element(by.css('#number1')).click();
+    element(by.css('#number9')).click();
+    element(by.css('#operator_divide')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('-4');
+    element(by.css('#number8')).click();
+    element(by.css('#operator_multiply')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('-0.5');
+    element(by.css('#number5')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#operator_equals')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('-2500000');
+  });
+
 });
