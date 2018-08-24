@@ -1,0 +1,32 @@
+body, table {
+  background-color: pink;
+  color: blue;
+  font-size: 2rem;
+  margin: 5rem;
+}
+
+button {
+  background-color: red;
+  font-size: 2rem;
+  margin: 1rem;
+  border: 0;
+  height: 3rem;
+  width: 3rem;
+}
+
+button#operator_equals {
+  background-color: green;
+}
+
+button.operator {
+  background-color: blue;
+}
+
+button#clear {
+  background-color: orange;
+}
+
+input {
+  font-size: 2rem;
+  margin-left: 5rem;
+}
