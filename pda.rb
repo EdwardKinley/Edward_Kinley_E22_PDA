@@ -1,10 +1,19 @@
-numbers_array = [1, 2, 3, 4, 5, 6]
+pets_hash = {"axolotl" => "Aristotl", "budgie" => "Bernadette", "cat" => "Cyril", "dog" => "Dougie"}
 
-def square(numbers)
-  numbers.each{ |number| p number ** 2 }
+def pets_names(pets)
+  pets.each { |animal, name| puts "The #{animal} is named #{name}." }
 end
 
-square(numbers_array)
+pets_names(pets_hash)
+
+
+# numbers_array = [1, 2, 3, 4, 5, 6]
+#
+# def square(numbers)
+#   numbers.each{ |number| p number ** 2 }
+# end
+#
+# square(numbers_array)
 
 # items = ["ark", "bottle", 1, 5, "everyone", "dragon", true, "cauliflower", 3.14159, [1, 2, 3], {"key" => "value"}]
 # # puts "Here is an array of items of various kinds:"
