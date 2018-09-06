@@ -12,10 +12,13 @@ puts "Here is an array containing the results of searching for items of String c
 p get_strings(items)
 puts
 
-# puts "Here is an array containing the String class items sorted into alphabetical order:"
-# items_strings_alphabetical = items_strings.sort
-# p items_strings_alphabetical
-# puts
+def sort(items)
+  return items.sort
+end
+puts "Here is an array containing the String class items sorted into alphabetical order:"
+items_strings = get_strings(items)
+p sort(items_strings)
+puts
 
 
 
