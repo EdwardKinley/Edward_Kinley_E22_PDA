@@ -1,3 +1,12 @@
+it('should change the text colour depending on the number of spaces left', function() {
+  # for each presentation there should be a number of spaces remaining
+  # an example of a presentation to test
+  # the presentation details page should display the number of spaces remanining
+  # the text indicating the number of spaces should reflect the number of spaces
+  # (green for > 10; amber for > 0 & < 10; red for 0)
+})
+
+
 items = ["ark", "bottle", 1, 5, "everyone", "dragon", true, "cauliflower", 3.14159, [1, 2, 3], {"key" => "value"}]
 puts "Here is an array of items of various kinds:"
 p items
